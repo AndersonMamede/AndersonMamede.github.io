@@ -1,21 +1,43 @@
 # Site settings
-description: "Um blog para compartilhar um pouco de conhecimento."
-baseurl: ""
-url: "http://blog.andersonmamede.com"
 title: "Anderson Mamede | Blog"
+description: Um blog sobre desenvolvimento web
+baseurl: ""
+url: "http://blog.andersonmamede.com.br"
+
 # User settings
+username: Anderson Mamede
+user_title: Desenvolvedor Web
+user_description: Desenvolvedor Web
 email: mamede.anderson@gmail.com
+#twitter_username:
 github_username: AndersonMamede
+#gplus_username:
+disqus_username: andersonmamede.disqus.com
 
 # Build settings
 markdown: kramdown
 highlighter: pygments
-#permalink: /:title/
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
 
 # Links to include in menu navigation
 # For external links add external: true
 links:
-#  - title: Home
-#    url: /
-#  - title: Tags
-#    url: /tags
+  - title: Home
+    url: /
+#  - title: Series
+#    url: /series
+  - title: Tags
+    url: /tags
+#  - title: About Me
+#    url: /about
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
