@@ -1,0 +1,21 @@
+# Site settings
+description: "Um blog para compartilhar um pouco de conhecimento."
+baseurl: ""
+url: "http://blog.andersonmamede.com"
+title: "Anderson Mamede | Blog"
+# User settings
+email: mamede.anderson@gmail.com
+github_username: AndersonMamede
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+#permalink: /:title/
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+#  - title: Home
+#    url: /
+#  - title: Tags
+#    url: /tags
