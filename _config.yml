@@ -9,9 +9,9 @@ username: Anderson Mamede
 user_title: Desenvolvedor Web
 user_description: Desenvolvedor Web
 email: mamede.anderson@gmail.com
-#twitter_username:
+twitter_username: andersonrmamede
 github_username: AndersonMamede
-#gplus_username:
+gplus_username: 104244621006686851628
 disqus_username: andersonmamede.disqus.com
 
 # Build settings
@@ -30,7 +30,7 @@ compress_html:
 # Links to include in menu navigation
 # For external links add external: true
 links:
-  - title: Home
+  - title: Início
     url: /
 #  - title: Series
 #    url: /series

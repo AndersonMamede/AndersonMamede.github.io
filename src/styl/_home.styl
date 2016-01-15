@@ -1,8 +1,11 @@
 .post-item
     text-align left
     padding rem(40px) 0
-    border-bottom 3px solid lightGray
+    border-bottom 1px solid lightGray
     center(rem(1000px))
+    &:last-child
+        border-bottom none
+        padding-bottom 0
     +below(rem(1000px))
         padding-left rem(20px)
         padding-right rem(20px)
@@ -33,12 +36,16 @@
         .post-title
             color black
             font-size rem(32px)
+            margin-bottom 0
             +below(cut)
                 text-align center
         .description
             color texts
             mainFont(300)
+            margin-top 0.4em
             font-size rem(20px)
             a
                 color main
                 text-decoration underline
+            .link.continue
+                margin-left 5px
