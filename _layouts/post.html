@@ -5,8 +5,13 @@
         {% include svg-icons.html %}
         {% include header-post.html %}
         <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
             <article role="article" id="scroll" class="post-content" itemprop="articleBody">
+                <p class="tags">
+                    {% for tag in page.tags %}
+                        <a href="{{ baseurl }}/tags/#{{tag | slugify }}">{{ tag }}</a>
+                    {% endfor %}
+                </p>
+                
                 {{ content }}
             </article>
 
