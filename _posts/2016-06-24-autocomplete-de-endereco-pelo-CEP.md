@@ -16,9 +16,9 @@ Segue abaixo uma implementação simples (mas completa) e que você pode facilme
 
 Observações:
 
-- A pesquisa do CEP é feita em um [web service](https://pt.wikipedia.org/wiki/Web_service) gratuito chamado [ViaCEP](http://viacep.com.br/ "Web service para consulta de endereço via CEP"), desta forma você não precisa ter um banco de dados apenas para armazenar os CEP/endereços.
+* A pesquisa do CEP é feita em um [web service](https://pt.wikipedia.org/wiki/Web_service) gratuito chamado [ViaCEP](http://viacep.com.br/ "Web service para consulta de endereço via CEP"), desta forma você não precisa ter um banco de dados apenas para armazenar os CEP/endereços.
 
-- Para fazer a pesquisa no web service (AJAX) foi utilizada a biblioteca jQuery. Se preferir, você pode trocá-la por qualquer outra de sua preferência.
+* Para fazer a pesquisa no web service (AJAX) foi utilizada a biblioteca jQuery. Se preferir, você pode trocá-la por qualquer outra de sua preferência.
 
 ```html
 <!DOCTYPE html>
