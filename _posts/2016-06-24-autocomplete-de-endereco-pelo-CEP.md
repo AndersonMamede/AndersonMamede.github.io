@@ -10,7 +10,7 @@ Uma das formas de diminuir o trabalho de preenchimento de formulário e conseque
 
 No nosso caso, vamos diminuir o trabalho de preenchimento do endereço implementando a funcionalidade de **autocomplete através do CEP**. Quando o usuário informar o **CEP**, nossa página vai carregar automaticamente os outros dados (**estado, cidade, bairro e logradouro**).
 
-O [resultado da implementação do autocomplete](exemplo/autocomplete-de-endereco-de-acordo-com-CEP.html){:target="_blank"} está disponível para testes.
+O [resultado da implementação do autocomplete](/exemplo/autocomplete-de-endereco-de-acordo-com-CEP/){:target="_blank"} está disponível para testes.
 
 Segue abaixo uma implementação simples (mas completa) e que você pode facilmente adaptar em seu formulário.
 
