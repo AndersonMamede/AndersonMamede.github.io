@@ -4,7 +4,7 @@ title: "Simples autocomplete de endereço pelo CEP"
 date: 2016-06-24 18:22:05
 ---
 
-Se você já preencheu formulários de cadastros pela internet (quem nunca?!), já deve estar enjoado de preencher os mesmos campos. Além de chato e demorado, formulários longos também aumentam a taxa de rejeição de seu site. Quanto mais campos o usuário tiver que preencher, maiores são as chances dele desistir.
+Se você já preencheu *formulários de cadastros* pela internet (quem nunca?!), já deve estar enjoado de preencher os mesmos campos. Além de chato e demorado, formulários longos também aumentam a taxa de rejeição de seu site. Quanto mais campos o usuário tiver que preencher, maiores são as chances dele desistir.
 
 Uma das formas de diminuir o trabalho de preenchimento de formulário e consequentemente melhorar a experiência do usuário e diminuir a taxa de rejeição, é utilizando **autocomplete**. Ou seja: o usuário preenche uma informação e o site/sistema faz o máximo possível para completar o restante.
 
@@ -17,7 +17,6 @@ Caso queira, você pode ver o [resultado da implementação do autocomplete usan
 Observações:
 
 * A pesquisa do CEP é feita em um [web service](https://pt.wikipedia.org/wiki/Web_service){:target="_blank"} gratuito chamado [ViaCEP](http://viacep.com.br/ "Web service para consulta de endereço via CEP"){:target="_blank"}, desta forma você não precisa ter um banco de dados apenas para armazenar os CEP/endereços.
-
 * Para fazer a pesquisa no web service (AJAX) foi utilizada a biblioteca jQuery. Se preferir, você pode trocá-la por qualquer outra de sua preferência.
 
 ```html
