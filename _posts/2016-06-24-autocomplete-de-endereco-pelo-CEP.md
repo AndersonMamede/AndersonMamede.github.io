@@ -14,10 +14,12 @@ Segue abaixo uma implementação simples (mas completa) e que você pode facilme
 
 Caso queira, você pode ver o [resultado da implementação do autocomplete usando o CEP]({{ site.url }}/exemplo/autocomplete-de-endereco-pelo-CEP/){:target="_blank"}.
 
+
 Observações:
 
 * A pesquisa do CEP é feita em um [web service](https://pt.wikipedia.org/wiki/Web_service){:target="_blank"} gratuito chamado [ViaCEP](http://viacep.com.br/ "Web service para consulta de endereço via CEP"){:target="_blank"}, desta forma você não precisa ter um banco de dados apenas para armazenar os CEP/endereços.
-* Para fazer a pesquisa no web service (AJAX) foi utilizada a biblioteca jQuery. Se preferir, você pode trocá-la por qualquer outra de sua preferência.
+* Para fazer a pesquisa no web service (AJAX) foi utilizada a biblioteca jQuery. Você pode trocá-la por qualquer outra de sua preferência.
+
 
 ```html
 <!DOCTYPE html>
@@ -57,7 +59,7 @@ Observações:
 				
 				// A url de pesquisa consiste no endereço do webservice + o cep que
 				// o usuário informou + o tipo de retorno desejado (entre "json",
-				// "xml", "piped" ou "querty")
+				// "jsonp", "xml", "piped" ou "querty")
 				var url = "http://viacep.com.br/ws/"+cep+"/json/";
 				
 				// Faz a pesquisa do CEP, tratando o retorno com try/catch para que
