@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Simples autocomplete de endereço pelo CEP"
 date: 2016-06-24 18:22:05
+title: "Simples autocomplete de endereço pelo CEP"
+tags:
+- javascript
 ---
 
 Se você já preencheu **formulários de cadastros** pela internet (quem nunca?!), já deve estar enjoado de preencher os mesmos campos. Além de chato e demorado, formulários longos também aumentam a taxa de rejeição de seu site. Quanto mais campos o usuário tiver que preencher, maiores são as chances dele desistir.
