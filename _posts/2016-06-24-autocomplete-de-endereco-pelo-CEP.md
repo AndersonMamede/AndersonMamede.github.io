@@ -14,7 +14,7 @@ No nosso caso, vamos diminuir o trabalho de preenchimento do endereço implement
 
 Segue abaixo uma implementação simples (mas completa) e que você pode facilmente adaptar em seu formulário.
 
-Caso queira, você pode ver o [resultado da implementação do autocomplete usando o CEP]({{ site.url }}/exemplo/autocomplete-de-endereco-pelo-CEP/){:target="_blank"}.
+Uma demonstração do [autocomplete de endereço pelo CEP]({{ site.url }}/exemplo/autocomplete-de-endereco-pelo-CEP/){:target="_blank"} está disponível para testes.
 
 
 Observações:
