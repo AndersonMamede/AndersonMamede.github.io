@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Pré-visualização de upload de imagem (preview) / Demonstração</title>
+	</head>
+	<body>
+		<i>Esta página serve como demonstração do artigo <b><a href="http://blog.andersonmamede.com.br/preview-de-imagem-antes-do-upload-pre-visualizacao/">Preview de imagem antes do upload (pré-visualização)</a></b>.</i><br><br>
+		<form>
+			<img id="imagem" src="placeholder.png"><br>
+			<input id="arquivo" name="arquivo" type="file" accept="image/*">
+		</form>
+		<script>
+			/*
+			 * Para efeito de demonstração, o JavaScript foi
+			 * incorporado no arquivo HTML.
+			 * O ideal é que você faça em um arquivo ".js" separado. Para mais informações
+			 * visite o endereço https://developer.yahoo.com/performance/rules.html#external
+			 */
+			(function(){
+				var $imagem = document.querySelector("#imagem");
+				var $arquivo = document.querySelector("#arquivo");
+				
+				// Evento para atualizar o elemento img de acordo com a imagem selecionada
+				document.querySelector("#arquivo").onchange = function(){
+					if(this.value){
+						showImagePreview(this.files[0]);
+					}else{
+						resetImage();
+					}
+				};
+				
+				// Atualiza o elemento img com a pré-visualização da imagem  selecionada
+				function showImagePreview(file){
+					if(!checkImageFile(file) || !checkBrowserSupport()){
+						return;
+					}
+					
+					// Coloca a imagem selecionada como pré-visualização
+					var reader = new FileReader();
+					
+					reader.onload = function(e){
+						$imagem.src = e.target.result;
+					};
+					
+					reader.readAsDataURL(file);
+				}
+				
+				// Reseta a imagem selecionada (volta a imagem de placeholder)
+				function resetImage(){
+					$imagem.src = "placeholder.png";
+					$arquivo.value = "";
+				}
+				
+				// Verifica se o arquivo selecionado é realmente uma imagem
+				function checkImageFile(file){
+					if(!file.type.match(/^image\//)){
+						alert("O arquivo não é uma imagem!");
+						resetImage();
+						return false;
+					}
+					
+					return true;
+				}
+				
+				// Verifica se o browser do usuário suporta a pré-visualização de imagens
+				function checkBrowserSupport(){
+					if(typeof FileReader != "function"){
+						alert("Seu browser não suporta a pré-visualização de imagens.");
+						return;
+					}
+					
+					return true;
+				}
+			})();
+		</script>
+	</body>
+</html>
