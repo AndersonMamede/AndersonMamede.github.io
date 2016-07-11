@@ -16,13 +16,13 @@ No nosso caso, vamos diminuir o trabalho de preenchimento do endereço implement
 Segue abaixo uma implementação simples (mas completa) e que você pode facilmente adaptar em seu formulário.
 
 Uma demonstração do [autocomplete de endereço pelo CEP]({{ site.url }}/exemplo/autocomplete-de-endereco-pelo-CEP/){:target="_blank"} está disponível para testes.
-
+<br><br>
 
 Observações:
 
 * A pesquisa do CEP é feita em um [web service](https://pt.wikipedia.org/wiki/Web_service){:target="_blank"} gratuito chamado [ViaCEP](http://viacep.com.br/ "Web service para consulta de endereço via CEP"){:target="_blank"}, desta forma você não precisa ter um banco de dados apenas para armazenar os CEP/endereços.
 * Para fazer a pesquisa no web service (AJAX) foi utilizada a biblioteca jQuery. Você pode trocá-la por qualquer outra de sua preferência.
-
+<br><br>
 
 ```html
 <!DOCTYPE html>
