@@ -11,6 +11,7 @@ A **pré-visualização de arquivos (preview)**, ou seja, visualizar o conteúdo
 
 É possível utilizar a pré-visualização inclusive em páginas e sistemas baseados totalmente em AJAX, já que a implementação do preview pode ser feita **usando JavaScript e não depende de processamento no servidor**. E se este for o seu caso (site/sistema em AJAX), você pode fazer o upload do arquivo usando a API FormData, a qual falarei sobre no próximo artigo.
 
+
 Voltando para a **pré-visualização de imagem**, vamos implementá-la usando JavaScript e seguindo estes passos:
 
 1 - utilizamos o **evento onchange** para saber quando o usuário selecionou um arquivo;
@@ -19,7 +20,9 @@ Voltando para a **pré-visualização de imagem**, vamos implementá-la usando J
 
 3 - se as validações passarem, então carregamos o conteúdo do arquivo no elemento IMG (ou seja, a pré-visualização) utilizando a [**API FileReader***](https://developer.mozilla.org/pt-BR/docs/Web/API/FileReader){:target="blank"};
 
+
 Obs: a [API FileReader](https://developer.mozilla.org/pt-BR/docs/Web/API/FileReader){:target="blank"} nos permite ler conteúdo de arquivos que estejam armazenados no computador do usuário e é suportada nos navegadores mais atuais. Veja a [tabela detalhada de compatibilidade](http://caniuse.com/#feat=filereader){:target="blank"}.
+
 
 Uma **demonstração** do [preview de imagem antes do upload]({{ site.url }}/exemplo/preview-de-imagem-antes-do-upload-pre-visualizacao/){:target="blank"} está disponível para testes.
 
