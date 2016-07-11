@@ -4,6 +4,7 @@ date: 2016-06-24 18:22:05
 title: "Simples autocomplete de endereço pelo CEP"
 tags:
 - javascript
+- usabilidade
 ---
 
 Se você já preencheu **formulários de cadastros** pela internet (quem nunca?!), já deve estar enjoado de preencher os mesmos campos. Além de chato e demorado, formulários longos também aumentam a taxa de rejeição de seu site. Quanto mais campos o usuário tiver que preencher, maiores são as chances dele desistir.
@@ -41,8 +42,8 @@ Observações:
 		<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
 		<script>
 			/*
-			 * Para efeito de demonstração, a implementação do autocomplete foi
-			 * incorporada no arquivo HTML.
+			 * Para efeito de demonstração, o JavaScript foi
+			 * incorporado no arquivo HTML.
 			 * O ideal é que você faça em um arquivo ".js" separado. Para mais informações
 			 * visite o endereço https://developer.yahoo.com/performance/rules.html#external
 			 */
