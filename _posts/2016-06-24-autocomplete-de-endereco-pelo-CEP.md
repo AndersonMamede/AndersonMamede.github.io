@@ -12,6 +12,7 @@ Se você já preencheu **formulários de cadastros** pela internet (quem nunca?!
 Uma das formas de diminuir o trabalho de preenchimento de formulário e consequentemente melhorar a experiência do usuário e diminuir a taxa de rejeição, é utilizando **autocomplete**. Ou seja: o usuário preenche uma informação e o site/sistema faz o máximo possível para completar o restante.
 
 No nosso caso, vamos diminuir o trabalho de preenchimento do endereço implementando a funcionalidade de **autocomplete através do CEP**. Quando o usuário informar o **CEP**, nossa página vai carregar automaticamente os outros dados (**estado, cidade, bairro e logradouro**).
+<br><br>
 
 Segue abaixo uma implementação simples (mas completa) e que você pode facilmente adaptar em seu formulário.
 
