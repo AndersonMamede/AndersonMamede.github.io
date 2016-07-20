@@ -8,7 +8,7 @@ tags:
 - extensão
 ---
 
-> O mais eficiente ambiente de desenvolvimento web
+> O mais eficiente ambiente de desenvolvimento web.  
 > Crie suas soluções de forma rápida e inovadora reduzindo o tempo de desenvolvimento em até 80%.
 
 Assim é definido o **ScriptCase** em seu [site oficial](http://www.scriptcase.com.br/){:target="_blank"}. Apesar de alguns (vários) problemas, o ScriptCase consegue cumprir de forma bem satisfatória o seu papel: criar aplicações web de forma rápida, e com opções de formulários, consultas, relatórios, gráficos, internacionalização, exportação de dados, e outras inúmeras opções.
