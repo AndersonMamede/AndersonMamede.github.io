@@ -17,12 +17,12 @@ Mas apesar de toda a facilidade proporcionada no desenvolvimento, alguns detalhe
 
 ### O problema
 
-O ScriptCase possui seu próprio ambiente de desenvolvimento (IDE), sendo que o editor de código é o [==CodeMirror==](https://codemirror.net/){:target="_blank"} **apenas com a função de search/replace**. Não chega nem a ser o básico:
+O ScriptCase possui seu próprio ambiente de desenvolvimento (IDE), sendo que o editor de código é o [CodeMirror](https://codemirror.net/){:target="_blank"} com apenas a função de **search/replace**. Não chega nem a ser o básico:
 
 * Não tem **autocomplete**
 * Não tem **teclas de atalhos** (!!)
 * Quer salvar o código? Tem que utilizar o **mouse** para clicar em um botão que fica no topo da IDE, que aliás, vez ou outra há ==miss-clicks== em alguma opção diferente do menu (por ele ficar muito próximo do botão e ser aberto no mouseover)
-* Depois de salvar um código, o iframe do editor é recarregado, ==fazendo com que o foco e a posição do cursor/scroll sejam perdidos==, te obrigando a sempre procurar no código onde você estava
+* Depois de salvar um código, o iframe do editor é recarregado, fazendo com que o **foco do editor e a posição do cursor/scroll sejam perdidos**, te obrigando a sempre procurar no código onde você estava antes de salvar
 * e vários outros detalhes que acaba fazendo você perder um bom tempo e diminui a produtividade
 
 ### A solução
