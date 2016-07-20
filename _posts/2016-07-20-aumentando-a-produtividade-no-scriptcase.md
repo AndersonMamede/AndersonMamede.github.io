@@ -3,9 +3,9 @@ layout: post
 date: 2016-07-20 21:51:22
 title: "Aumentando a produtividade no ScriptCase"
 tags:
-- extensão
-- produtividade
 - scriptcase
+- produtividade
+- extensão
 ---
 
 > O mais eficiente ambiente de desenvolvimento web
