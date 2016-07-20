@@ -24,7 +24,7 @@ Voltando para a **pré-visualização de imagem**, vamos implementá-la usando J
 Obs: a [API FileReader](https://developer.mozilla.org/pt-BR/docs/Web/API/FileReader){:target="_blank"} nos permite ler conteúdo de arquivos que estejam armazenados no computador do usuário e é suportada nos navegadores mais atuais. Veja a [tabela detalhada de compatibilidade](http://caniuse.com/#feat=filereader){:target="_blank"}.
 <br><br>
 
-Uma **demonstração** do [preview de imagem antes do upload]({{ site.url }}/exemplo/preview-de-imagem-antes-do-upload-pre-visualizacao/){:target="_blank"} está disponível para testes.
+Uma **demonstração** do [preview de imagem antes do upload]({{ site.url }}/demo/preview-de-imagem-antes-do-upload-pre-visualizacao/){:target="_blank"} está disponível para testes.
 
 Segue abaixo a implementação do preview.
 
