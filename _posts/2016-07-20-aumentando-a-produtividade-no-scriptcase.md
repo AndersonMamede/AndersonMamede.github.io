@@ -21,13 +21,13 @@ O ScriptCase possui seu próprio ambiente de desenvolvimento (IDE), sendo que o 
 
 * Não tem **autocomplete**
 * Não tem **teclas de atalhos** (!!)
-* Quer salvar o código? Tem que utilizar o **mouse** para clicar em um botão que fica no topo da IDE, que aliás, vez ou outra há **miss-clicks** em alguma opção diferente do menu (por ele ficar muito próximo do botão e ser aberto no mouseover)
-* Depois de salvar um código, o iframe do editor é recarregado, fazendo com que o **foco do editor e a posição do cursor/scroll sejam perdidos**, te obrigando a sempre procurar no código onde você estava antes de salvar
-* e vários outros detalhes que acaba fazendo você perder um bom tempo e diminui a produtividade
+* Quer salvar o código? Tem que utilizar o **mouse** para clicar em um botão que fica no topo da IDE, que aliás, vez ou outra, há **miss-clicks** em alguma opção diferente do menu (por ele ficar muito próximo do botão e ser aberto no mouseover)
+* Depois de salvar um código, o iframe do editor é recarregado, fazendo com que o **foco do editor e a posição do cursor/scroll sejam perdidos**, te obrigando a sempre procurar no código onde você estava posicionado antes de salvar
+* e vários outros detalhes que acabam fazendo você perder um bom tempo e diminui a produtividade
 
 ### A solução
 
-Infelizmente não existe maneira de integrar o ScriptCase à uma IDE ou um editor externo, tampouco alterar seu código fonte. A solução que encontrei? Criar uma **extensão para o navegador** que, trabalhando com as funções internas do ScriptCase, resolva esses problemas. Daí surgiu a extensão [**ScriptCase Tools**](https://goo.gl/i4LtVl){:target="_blank"}.
+Infelizmente não existe maneira de integrar o ScriptCase à uma IDE ou editor externo, tampouco alterar seu código fonte. A solução que encontrei? Criar uma **extensão para o navegador** que, trabalhando com as funções internas do ScriptCase, resolva esses problemas. Daí surgiu a extensão [**ScriptCase Tools**](https://goo.gl/i4LtVl){:target="_blank"}.
 
 ### A extensão ScriptCase Tools
 
@@ -41,7 +41,7 @@ Segue um printscreen da tela de configuração da extensão, onde é possível v
 
 ### Instalação, contribuição e outras informações
 
-A **instalação** pode ser feita através da [Chrome Web Store](https://goo.gl/i4LtVl){:target="_blank"}. Instruções para instalação manual ou da versão mais atual (beta) estão disponíveis no [**repositório oficial**](github.com/AndersonMamede/scriptcase-tools){:target="_blank"} do ScriptCase Tools.
+A **instalação** da versão oficial pode ser feita através da [Chrome Web Store](https://goo.gl/i4LtVl){:target="_blank"}. Instruções para instalação manual ou da versão mais atual (beta) estão disponíveis no [**repositório oficial**](github.com/AndersonMamede/scriptcase-tools){:target="_blank"} do ScriptCase Tools.
 
-No [**repositório oficial**](github.com/AndersonMamede/scriptcase-tools){:target="_blank"} você também pode conferir todo o **código fonte** da extensão, além de **contribuir** com o desenvolvimento, enviar **sugestões** de novas funcionalidades, tirar **dúvidas**, reportar bugs e obter outras informações. Contato pode ser feito tanto lá, quanto aqui no site, ou ainda, dependendo do assunto, via e-mail para [mailto:mamede.anderson@gmail.com](mamede.anderson@gmail.com){:target="_blank"}.
+No [**repositório oficial**](github.com/AndersonMamede/scriptcase-tools){:target="_blank"} você também pode conferir todo o **código fonte** da extensão, além de **contribuir** com o desenvolvimento, enviar **sugestões** de novas funcionalidades, tirar **dúvidas**, reportar bugs e obter mais informações. Contato pode ser feito tanto lá, quanto aqui no site, ou ainda, dependendo do assunto, via e-mail para [mamede.anderson@gmail.com](mailto:mamede.anderson@gmail.com){:target="_blank"}.
 
