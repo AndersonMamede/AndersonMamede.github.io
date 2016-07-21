@@ -11,9 +11,9 @@ tags:
 > O mais eficiente ambiente de desenvolvimento web.  
 > Crie suas soluções de forma rápida e inovadora reduzindo o tempo de desenvolvimento em até 80%.
 
-Assim é definido o **ScriptCase** em seu [site oficial](http://www.scriptcase.com.br/){:target="_blank"}. Apesar de alguns (vários) problemas, o ScriptCase consegue cumprir de forma bem satisfatória o seu papel: criar aplicações web de forma rápida, e com opções de formulários, consultas, relatórios, gráficos, internacionalização, exportação de dados, e outras inúmeras opções.
+Assim é definido o **ScriptCase** em seu [site oficial](http://www.scriptcase.com.br/){:target="_blank"}. Apesar de alguns (vários) problemas, o ScriptCase consegue cumprir de forma bem satisfatória o seu papel: criar aplicações web de forma rápida, e com opções de formulários, consultas, relatórios, gráficos, internacionalização, exportação de dados, e outras inúmeras opções. Mas apesar de toda a facilidade proporcionada no desenvolvimento, alguns detalhes ainda me deixavam muito insatisfeito.
 
-Mas apesar de toda a facilidade proporcionada no desenvolvimento, alguns detalhes ainda me deixavam muito insatisfeito. Eu estava acostumado a trabalhar com o editor [Sublime Text](https://www.sublimetext.com/){:target="_blank"}, onde é possível **customizá-lo completamente** e também encontrar praticamente todos os tipos de plugins e funcionalidades, desde teclas de atalhos, vários tipos de autocompletes, snippets, integração com versionamento/ftp, documentação de linguagens, etc. Já no ScriptCase, toda essa facilidade, que aumenta a produtividade, praticamente não existe.
+Eu estava acostumado a trabalhar com o editor [Sublime Text](https://www.sublimetext.com/){:target="_blank"}, onde é possível **customizá-lo completamente** e também encontrar praticamente todos os tipos de plugins e funcionalidades, desde teclas de atalhos, vários tipos de autocomplete, snippets, integração com versionamento/ftp, documentação de linguagens, etc. Já no ScriptCase, toda essa facilidade, que aumenta a produtividade, praticamente **não existe**.
 
 ### O problema
 
@@ -21,7 +21,7 @@ O ScriptCase possui seu próprio ambiente de desenvolvimento (IDE), sendo que o 
 
 * Não tem **autocomplete**
 * Não tem **teclas de atalhos** (!!)
-* Quer salvar o código? Tem que utilizar o **mouse** para clicar em um botão que fica no topo da IDE, que aliás, vez ou outra há ==miss-clicks== em alguma opção diferente do menu (por ele ficar muito próximo do botão e ser aberto no mouseover)
+* Quer salvar o código? Tem que utilizar o **mouse** para clicar em um botão que fica no topo da IDE, que aliás, vez ou outra há **miss-clicks** em alguma opção diferente do menu (por ele ficar muito próximo do botão e ser aberto no mouseover)
 * Depois de salvar um código, o iframe do editor é recarregado, fazendo com que o **foco do editor e a posição do cursor/scroll sejam perdidos**, te obrigando a sempre procurar no código onde você estava antes de salvar
 * e vários outros detalhes que acaba fazendo você perder um bom tempo e diminui a produtividade
 
