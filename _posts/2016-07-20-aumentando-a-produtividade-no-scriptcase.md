@@ -15,7 +15,6 @@ Assim é definido o **ScriptCase** em seu [site oficial](http://www.scriptcase.c
 
 Eu estava acostumado a trabalhar com o editor [Sublime Text](https://www.sublimetext.com/){:target="_blank"}, onde é possível **customizá-lo completamente** e também encontrar praticamente todos os tipos de plugins e funcionalidades, desde teclas de atalhos, vários tipos de autocomplete, snippets, integração com versionamento/ftp, documentação de linguagens, etc. Já no ScriptCase, toda essa facilidade, que aumenta a produtividade, praticamente **não existe**.
 
-
 ### O problema
 
 O ScriptCase possui seu próprio ambiente de desenvolvimento (IDE), sendo que o editor de código é o [CodeMirror](https://codemirror.net/){:target="_blank"} com apenas a função de **search/replace**. Não chega nem a ser o básico:
@@ -26,11 +25,9 @@ O ScriptCase possui seu próprio ambiente de desenvolvimento (IDE), sendo que o 
 * Depois de salvar um código, o iframe do editor é recarregado, fazendo com que o **foco do editor e a posição do cursor/scroll sejam perdidos**, te obrigando a sempre procurar no código onde você estava posicionado antes de salvar
 * e vários outros detalhes que acabam fazendo você perder um bom tempo e diminui a produtividade
 
-
 ### A solução
 
 Infelizmente não existe maneira de integrar o ScriptCase à uma IDE ou editor externo, tampouco alterar seu código fonte. A solução que encontrei? Criar uma **extensão para o navegador** que, trabalhando com as funções internas do ScriptCase, resolva esses problemas. Daí surgiu a extensão [**ScriptCase Tools**](https://goo.gl/i4LtVl){:target="_blank"}.
-
 
 ### A extensão ScriptCase Tools
 
@@ -41,7 +38,6 @@ Criei esta extensão usando HTML/CSS/JavaScript, algumas [API's do navegador Chr
 Segue um printscreen da tela de configuração da extensão, onde é possível ver as funcionalidades disponibilizadas na versão 0.2:
 
 ![ScriptCase Tools]({{ site.url }}/images/scriptcase-tools-v0.2.png)
-
 
 ### Instalação, contribuição e outras informações
 
