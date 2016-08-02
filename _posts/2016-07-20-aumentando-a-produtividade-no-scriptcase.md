@@ -25,11 +25,11 @@ O ScriptCase possui seu próprio ambiente de desenvolvimento (IDE), sendo que o 
 * Depois de salvar um código, o iframe do editor é recarregado, fazendo com que o **foco do editor e a posição do cursor/scroll sejam perdidos**, te obrigando a sempre procurar no código onde você estava posicionado antes de salvar
 * e vários outros detalhes que acabam fazendo você perder um bom tempo e diminui a produtividade
 
-### A solução
+### A solução {#a-solucao}
 
 Infelizmente não existe maneira de integrar o ScriptCase à uma IDE ou editor externo, tampouco alterar seu código fonte. A solução que encontrei? Criar uma **extensão para o navegador** que, trabalhando com as funções internas do ScriptCase, resolva esses problemas. Daí surgiu a extensão [**ScriptCase Tools**](https://goo.gl/i4LtVl){:target="_blank"}.
 
-### A extensão ScriptCase Tools
+### A extensão ScriptCase Tools {#a-extensao-scriptcase-tools}
 
 O objetivo da extensão **ScriptCase Tools** é simplesmente **melhorar a usabilidade** do ambiente de desenvolvimento do ScriptCase, adicionando (e em alguns casos, removendo) funcionalidades na IDE.
 
@@ -39,7 +39,7 @@ Segue um printscreen da tela de configuração da extensão, onde é possível v
 
 ![ScriptCase Tools]({{ site.url }}/images/scriptcase-tools-v0.2.png)
 
-### Instalação, contribuição e outras informações
+### Instalação, contribuição e outras informações {#instalacao-contribuicao-e-outras-informacoes}
 
 A **instalação** da versão oficial pode ser feita através da [Chrome Web Store](https://goo.gl/i4LtVl){:target="_blank"}. Instruções para instalação manual ou da versão mais atual (beta) estão disponíveis no [**repositório oficial**](github.com/AndersonMamede/scriptcase-tools){:target="_blank"} do ScriptCase Tools.
 
