@@ -14,9 +14,9 @@ Há alguns dias eu precisei implementar um **captcha** em uma aplicação do tip
 
 Mas eu também precisava fazer um controle (log) das tentativas de acesso, e para isso eu tinha que saber o que foi que deu de errado na tentativa do usuário. Podia ser que os campos do formulário não tinham sido preenchidos corretamente, mas podia ser que o captcha tinha sido informado incorretamente. E é o segundo caso, do captcha informado incorretamente, que eu precisava "rastrear".
 
-Numa aplicação do tipo Controle (ou de Formulário) existe o evento [onValidateFailure](http://www.scriptcase.com.br/docs/pt_br/v81/manual_mp.htm#aplicacoes-de-formularios/formularios/eventos/eventos){:target="blank" :rel="nofollow"}, que é executado quando a validação do formulário não é bem sucedida. É neste evento que eu poderia obter e gravar a informação de que o captcha estava incorreto. Mas infelizmente o evento onValidateFailure não faz distinção do que ocorreu. Não existe uma forma documentada no ScriptCase de saber o que deu de errado na validação do formulário. Então o jeito foi vasculhar o código do ScriptCase para entender como e onde são feitas as verificações...
+Numa aplicação do tipo Controle (ou de Formulário) existe o evento [onValidateFailure](http://www.scriptcase.com.br/docs/pt_br/v81/manual_mp.htm#aplicacoes-de-formularios/formularios/eventos/eventos){:target="blank" rel="nofollow"}, que é executado quando a validação do formulário não é bem sucedida. É neste evento que eu poderia obter e gravar a informação de que o captcha estava incorreto. Mas infelizmente o evento onValidateFailure não faz distinção do que ocorreu. Não existe uma forma documentada no ScriptCase de saber o que deu de errado na validação do formulário. Então o jeito foi vasculhar o código do ScriptCase para entender como e onde são feitas as verificações...
 
-## Solução
+### Solução
 
 A solução que encontrei para **checar se o captcha informado está correto** também é bem simples. Verifiquei que o ScriptCase armazena o código correto do captcha na sessão do usuário ($_SESSION), e o código informado pelo usuário na propriedade "captcha_code" do objeto da aplicação ($this). Então basicamente a solução é, no evento **onValidateFailure** da aplicação, verificar se ambos os valores são iguais ou diferentes.
 
