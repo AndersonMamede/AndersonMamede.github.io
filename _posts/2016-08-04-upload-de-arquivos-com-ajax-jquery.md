@@ -14,7 +14,7 @@ Com a chegada do **HTML5** e de **novas APIs disponibilizadas para o JavaScript*
 
 ## FormData {#formdata}
 
-FormData é basicamente uma interface que disponibiliza uma forma fácil de construir um conjunto de dados, cada qual em sua chave, representando um formulário com seus campos e valores.
+FormData é basicamente uma interface que disponibiliza uma forma fácil de construir um conjunto de dados, cada qual em sua chave, **representando um formulário** com seus campos e valores.
 
 É possível criar um objeto do FormData vazio ou mesmo informar no momento da criação (construtor) um elemento form, que terá seus campos e valores "copiados" para o novo objeto:
 
@@ -23,11 +23,11 @@ FormData é basicamente uma interface que disponibiliza uma forma fácil de cons
 var formData = new FormData();
 
 // Desta forma os campos dentro do elemento "formulario" serão
-// copiados para o objeto
+// copiados para o novo objeto
 var formData = new FormData(document.getElementById("formulario"));
 ```
 
-Também é possível adicionar valores ao formData posteriormente, independente do objeto ter sido criado vazio ou não. Para tal, é utilizado o método append:
+Também é possível adicionar valores ao formData **posteriormente**, independente do objeto ter sido criado vazio ou não. Para tal, é utilizado o método **append**:
 
 ```javascript
 // Adiciona mais um valor ao objeto formData
@@ -58,7 +58,6 @@ Observações:
 		<title>Demonstração do upload de arquivos com AJAX e jQuery</title>
 	</head>
 	<body>
-		<i>Esta página serve como demonstração do artigo <b><a href="http://blog.andersonmamede.com.br/upload-de-arquivos-com-ajax-e-jquery/">Upload de arquivos com AJAX e jQuery</a></b>.</i><br><br>
 		<form id="form-demo" onsubmit="return false">
 			<input type="file" id="arquivo" name="arquivo"><br><br>
 			<button id="button-send">Enviar</button>
