@@ -23,14 +23,12 @@ A solução que encontrei para **checar se o captcha informado está correto** t
 O código final da verificação ficou assim (no evento onValidateFailure):
 
 ```php
-<?php
 $captchaOficial = strToUpper($_SESSION["securimage_code_value"]);
 $captchaInformado = strToUpper($this->captcha_code);
 
 if($captchaInformado != $captchaOficial){
 	sc_log_add("...");
 }
-?>
 ```
 
 
