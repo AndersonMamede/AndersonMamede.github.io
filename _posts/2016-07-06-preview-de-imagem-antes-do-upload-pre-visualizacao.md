@@ -9,7 +9,7 @@ tags:
 
 A **pré-visualização de arquivos (preview)**, ou seja, visualizar o conteúdo do arquivo antes de enviá-lo para o servidor e fazer upload, principalmente para imagens, é uma funcionalidade muito interessante para o usuário e é bem simples de implementar.
 
-É possível utilizar a pré-visualização inclusive em páginas e sistemas baseados totalmente em AJAX, já que a implementação do preview pode ser feita **usando JavaScript e não depende de processamento no servidor**. E se este for o seu caso (site/sistema em AJAX), você pode fazer o upload do arquivo usando a API FormData, a qual falarei sobre no próximo artigo.
+É possível utilizar a pré-visualização inclusive em páginas e sistemas baseados totalmente em AJAX, já que a implementação do preview pode ser feita **usando JavaScript e não depende de processamento no servidor**. E se este for o seu caso (site/sistema em AJAX), você também pode fazer o [upload do arquivo com AJAX]({{ site.url }}/upload-de-arquivos-com-ajax-jquery/){:target="_blank"}.
 <br><br>
 
 Voltando para a **pré-visualização de imagem**, vamos implementá-la usando JavaScript e seguindo estes passos:
