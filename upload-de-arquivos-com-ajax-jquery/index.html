@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Demonstração do upload de arquivos com AJAX (+jQuery)</title>
+	</head>
+	<body>
+		<i>Esta página serve como demonstração do artigo <b><a href="http://blog.andersonmamede.com.br/upload-de-arquivos-com-ajax-e-jquery/">Upload de arquivos com AJAX (+jQuery)</a></b>.</i><br><br>
+		<form id="form-demo" onsubmit="return false">
+			<input type="file" id="arquivo" name="arquivo"><br><br>
+			<button id="button-send">Enviar</button>
+		</form>
+		<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script>
+			/*
+			 * Para efeito de demonstração, a implementação foi toda incorporada
+			 * no arquivo HTML.
+			 * O ideal é que você faça em um arquivo ".js" separado. Para mais informações
+			 * visite o endereço https://developer.yahoo.com/performance/rules.html#external
+			 */
+			
+			$("#button-send").click(sendFormData);
+			
+			function sendFormData(){
+				// Utiliza a API FormData, passando o formulário como parâmetro.
+				// Será criada um objeto do FormData, com todos os dados existentes
+				// no formulário (inclusive com o arquivo para upload!)
+				var formData = new FormData($("#form-demo").get(0));
+				
+				// Página que vai receber os dados e o arquivo da requisição.
+				// Deixei "processa-upload.php" apenas para exemplo, e deve ser alterado
+				// para o caminho do arquivo que fará o tratamento dos dados e do upload;
+				// Caso seja uma página PHP, os dados dos campos estarão disponíveis na
+				// variável $_POST e o arquivo estará disponível na variável $_FILES
+				var ajaxUrl = "processa-upload.php";
+				
+				$.ajax({
+					url : ajaxUrl,
+					type : "POST",
+					data : formData,
+					// ambos os parâmetros 'contentType' e 'processData' são
+					// são CRUCIAIS para que o formulário (upload) seja enviado corretamente
+					contentType : false,
+					processData : false
+				}).done(function(response){
+					// Aqui deve ser verificado o retorno do AJAX, se houve algum erro para
+					// fazer tratamento e executar rotinas pós upload...
+				}).fail(function(){
+					alert("Não foi possível enviar os dados!");
+				}).always(function(){
+					alert("Requisição AJAX finalizada!");
+				});
+			}
+		</script>
+	</body>
+</html>
