@@ -1,7 +1,9 @@
-﻿---
+---
 layout: post
 title: "Upload de arquivos com AJAX (+jQuery)"
 date: 2016-08-04 22:05:18
+tags:
+- javascript
 ---
 
 Até algum tempo atrás não havia uma forma para se fazer **upload de arquivos com AJAX** e que funcionasse nos **browsers mais recentes** sem ter que que escrever códigos diferentes para browsers específicos.
