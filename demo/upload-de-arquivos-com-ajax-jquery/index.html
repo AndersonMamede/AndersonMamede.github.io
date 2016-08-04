@@ -29,11 +29,11 @@
 				var formData = new FormData($("#form-demo").get(0));
 				
 				// Página que vai receber os dados e o arquivo da requisição.
-				// Deixei "test.html" apenas para exemplo, e deve ser alterado para o caminho do arquivo
-				// que fará o tratamento dos dados e do arquivo;
+				// Deixei "processa-upload.php" apenas para exemplo, e deve ser alterado
+				// para o caminho do arquivo que fará o tratamento dos dados e do upload;
 				// Caso seja uma página PHP, os dados dos campos estarão disponíveis na
 				// variável $_POST e o arquivo estará disponível na variável $_FILES
-				var ajaxUrl = "test.html";
+				var ajaxUrl = "processa-upload.php";
 				
 				$.ajax({
 					url : ajaxUrl,
@@ -46,14 +46,10 @@
 				}).done(function(response){
 					// Aqui deve ser verificado o retorno do AJAX, se houve algum erro para
 					// fazer tratamento e executar rotinas pós upload...
-					// if(...){
-						// alert("Erro ao enviar os dados!");
-						// return false;
-					// }
-					
-					alert("Dados enviados com sucesso!");
 				}).fail(function(){
-					alert("Não foi possível enviar os dados!");
+					// Aqui devem ser feitos os tratamentos de erros da requisição
+				}).always(function(){
+					alert("Requisição AJAX finalizada!");
 				});
 			}
 		</script>
