@@ -114,4 +114,4 @@ A compatibilidade da API FormData com os browsers pode ser verificada no final d
 
 ## Extra
 
-Caso você esteja implementado upload de imagens/fotos, veja o artigo anterior, onde eu ensino como criar um "[Preview de imagem antes do upload (pré-visualização)]"({{ site.url }}/preview-de-imagem-antes-do-upload-pre-visualizacao/){:target="_blank"}.
+Caso você esteja implementado upload de imagens/fotos, veja o artigo anterior, onde eu ensino como criar um [Preview de imagem antes do upload (pré-visualização)]({{ site.url }}/preview-de-imagem-antes-do-upload-pre-visualizacao/){:target="_blank"}.
