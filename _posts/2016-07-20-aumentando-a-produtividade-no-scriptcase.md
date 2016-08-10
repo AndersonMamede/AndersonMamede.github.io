@@ -11,7 +11,7 @@ tags:
 > O mais eficiente ambiente de desenvolvimento web.
 > Crie suas soluções de forma rápida e inovadora reduzindo o tempo de desenvolvimento em até 80%.
 
-Assim é definido o **ScriptCase**, uma plataforma de [Desenvolvimento Rápido de Aplicação (ou RAD - Rapid Application Development)](https://pt.wikipedia.org/wiki/Desenvolvimento_r%C3%A1pido_de_aplica%C3%A7%C3%B5es){:target="_blank" rel="nofollow"} em PHP, em seu [site oficial](http://www.scriptcase.com.br/){:target="_blank"}.
+Assim é definido o **ScriptCase**, uma plataforma de [Desenvolvimento Rápido de Aplicação](https://pt.wikipedia.org/wiki/Desenvolvimento_r%C3%A1pido_de_aplica%C3%A7%C3%B5es){:target="_blank" rel="nofollow"} (ou RAD - Rapid Application Development) em PHP, em seu [site oficial](http://www.scriptcase.com.br/){:target="_blank"}.
 
 Apesar de alguns (vários) problemas, o **ScriptCase** consegue cumprir de forma bem satisfatória o seu papel: criar **aplicações web** nas linguagens PHP e JavaScript, integrando vários bancos de dados diferentes (MySQL, SQL Server, PostgreSQL, etc) de forma rápida e com opções de formulários, consultas, relatórios, gráficos, internacionalização, exportação de dados, e outras inúmeras opções. Mas apesar de toda a facilidade proporcionada no desenvolvimento, alguns detalhes ainda me deixavam muito insatisfeito.
 
