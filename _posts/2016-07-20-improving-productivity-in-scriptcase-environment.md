@@ -11,7 +11,7 @@ tags:
 > The most efficient web development environment.<br>
 > Create your web solutions in a fast and innovative way, reducing the development time in up to 80%.
 
-That is how its own [official page](http://www.scriptcase.net/){:target="_blank"} defines **ScriptCase**, a [Rapid Application Development](https://en.wikipedia.org/wiki/Rapid_application_development){:target="_blank" rel="nofollow"} (RAD) platform written in PHP.
+That is how its own [official page](http://www.scriptcase.net/){:target="_blank"} describes **ScriptCase**, a [Rapid Application Development](https://en.wikipedia.org/wiki/Rapid_application_development){:target="_blank" rel="nofollow"} (RAD) platform written in PHP.
 
 In spite of having some (many) problems, **ScriptCase** sufficiently fulfills what it's up to: a tool to create **web applications** using PHP and JavaScript, integrating multiple different databases (e.g. MySQL, SQL Server, PostgreSQL) in a very fast way and providing utilities like forms, grids, searches, reports, charts, internacionalization, export data to PDF/XLS/CSV, and many other options. Although ScriptCase provides all these benefits, **some (not so) small details in its environment are very frustrating**.
 
