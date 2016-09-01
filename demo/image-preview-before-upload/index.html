@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Image preview before upload / Demonstração</title>
+	</head>
+	<body>
+		<i>This is a demo for <b><a href="http://blog.andersonmamede.com.br/image-preview-before-upload/">Image preview before upload</a></b>.</i><br><br>
+		<form>
+			<img id="image" src="placeholder.png"><br>
+			<input id="image_file" name="image_file" type="file" accept="image/*">
+		</form>
+		<script>
+			/*
+			 * For demonstration porpuse, all JavaScript code was incorporated in
+			 * the HTML file. But when developing your application, your JavaScript code
+			 * should be in a separated file. Check this page for more information:
+			 * https://developer.yahoo.com/performance/rules.html#external
+			 */
+			(function(){
+				var $image = document.querySelector("#image");
+				var $imageFile = document.querySelector("#image_file");
+				
+				// The onchange event fires when a file is selected in the image_file field
+				$imageFile.onchange = function(){
+					if(this.value){
+						showImagePreview(this.files[0]);
+					}else{
+						resetImage();
+					}
+				};
+				
+				function checkForBrowserSupport(){
+					if(typeof FileReader != "function"){
+						alert("Your browser does not support image preview!");
+						return;
+					}
+					
+					return true;
+				}
+				
+				function isImageFile(selectedFile){
+					if(!selectedFile.type.match(/^image\//)){
+						alert("Selected file is not an image!");
+						resetImage();
+						return false;
+					}
+					
+					return true;
+				}
+				
+				function showImagePreview(selectedFile){
+					if(!checkForBrowserSupport() || !isImageFile(selectedFile)){
+						return;
+					}
+					
+					// Update IMG element with the content of the selected
+					// file using the FileReader API
+					var reader = new FileReader();
+					
+					reader.onload = function(e){
+						$image.src = e.target.result;
+					};
+					
+					reader.readAsDataURL(selectedFile);
+				}
+				
+				function resetImage(){
+					$image.src = "placeholder.png";
+					$imageFile.value = "";
+				}
+			})();
+		</script>
+	</body>
+</html>
