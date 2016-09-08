@@ -6,7 +6,7 @@ tags:
 - scriptcase
 ---
 
-Some time ago I had to implement [**CAPTCHA**](http://www.scriptcase.net/tutorials/using-the-captcha-form-login/){:target="blank"} in a Control application in **ScriptCase**. I didn't have trouble with the implementation, as it's very simple:
+Some time ago I had to implement [**CAPTCHA**](http://www.scriptcase.net/tutorials/using-the-captcha-form-login/){:target="_blank"} in a Control application in **ScriptCase**. I didn't have trouble with the implementation, as it's very simple:
 
 * menu "Control"
 * section "Security"
@@ -14,7 +14,7 @@ Some time ago I had to implement [**CAPTCHA**](http://www.scriptcase.net/tutoria
 
 But I also had to **control (log) all access attempts**, and to do that I had to know what exactly was wrong with the access attempt. It could be that the fields were not correctly filled in (e.g. empty fields), or that the user informed an invalid CAPTCHA. And it's this second case, invalid CAPTCHA, that **I had to track**.
 
-In a Control/Form application there's the event [onValidateFailure](http://www.scriptcase.net/docs/en_us/v81/control-applications/control/events/events){:target="_blank" rel="nofollow"}, which runs when the form validation fails. This was the event that I could use to obtain the information that the CAPTCHA was invalid. But ScriptCase **doesn't make distinction about what was wrong** neither provides us an easy way to determine it. There is no documented way to know why the form validation failed. So I had to spend some time searching and trying to understand ScriptCase's internal code to **figure out how validations are made**.
+In a Control/Form application there's the event [onValidateFailure](http://www.scriptcase.net/docs/en_us/v81/control-applications/control/events/events){:target="_blank"}, which runs when the form validation fails. This was the event that I could use to obtain the information that the CAPTCHA was invalid. But ScriptCase **doesn't make distinction about what was wrong** neither provides us an easy way to determine it. There is no documented way to know why the form validation failed. So I had to spend some time searching and trying to understand ScriptCase's internal code to **figure out how validations are made**.
 
 ## Solution
 
