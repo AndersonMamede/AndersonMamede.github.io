@@ -27,8 +27,8 @@ var formData = new FormData();
 // This way formData is filled in with the fields/values from #formElement
 var formData = new FormData(document.getElementById("formElement"));
 ```
-
 <br>
+
 It's also possible to **add new values to formData later** and for such you can use the **append** method:
 
 ```javascript
@@ -36,8 +36,8 @@ It's also possible to **add new values to formData later** and for such you can 
 formData.append("email", "test@email.com");
 formData.append("age", "20");
 ```
-
 <br>
+
 FormData has many other methods you can use; you can check them in the [FormData documentation](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
 
 ## Upload using AJAX
@@ -49,8 +49,8 @@ You can check this [demo of uploading file using AJAX]({{ site.url }}/demo/file-
 * It uses the **jQuery library** to make the AJAX request. You can use whatever library you prefer or even make [AJAX request using plain JavaScript](http://www.quirksmode.org/js/xmlhttp.html){:target="_blank" rel="nofollow"}.
 
 * In case the page that receives the AJAX request is a **PHP** page, the form fields are accessible through the [$_POST variable](http://php.net/manual/en/reserved.variables.post.php){:target="_blank" rel="nofollow"} and the file through the [$_FILES variable](http://php.net/manual/en/reserved.variables.files.php){:target="_blank" rel="nofollow"}.
-<br><br>
 
+<br>
 ```html
 <!DOCTYPE html>
 <html>
