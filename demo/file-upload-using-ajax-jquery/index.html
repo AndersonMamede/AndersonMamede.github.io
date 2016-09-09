@@ -31,14 +31,15 @@
 					url : ajaxUrl,
 					type : "POST",
 					data : formData,
-					// both 'contentType' and 'processData' parameters are required so
-					// that all data are correctly transferred
+					// both 'contentType' and 'processData' parameters are
+					// required so that all data are correctly transferred
 					contentType : false,
 					processData : false
 				}).done(function(response){
-					// In this callback you get the AJAX response to check if everything is right...
+					// In this callback you get the AJAX response to check
+					// if everything is right...
 				}).fail(function(){
-					// Here you should treat the http errors (e.g., 403, 404, 500)
+					// Here you should treat the http errors (e.g., 403, 404)
 				}).always(function(){
 					alert("AJAX request finished!");
 				});
