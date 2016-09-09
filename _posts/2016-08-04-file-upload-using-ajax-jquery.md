@@ -10,11 +10,11 @@ Until some time ago there was no way to **upload files using AJAX/JavaScript** t
 
 One of the most common ways to simulate upload using AJAX was to submit a form to another page which would make some validations and then save the file in the right folder or in database. Another option was to use something that worked as an intermediary between the browser and the server; some plugins (e.g. jQuery Uploadify) used to use Flash back then.
 
-## HTML5, new APIs and new possibilities
+### HTML5, new APIs and new possibilities
 
 With the arrival of **HTML5 and its new APIs** available for JavaScript, uploading file using AJAX (e.g., images, documents, PDF) has become very simple. Now with a **few lines of JavaScript** it is possible to upload the file using AJAX and **without any third-party plugin as intermediary**! The "new" API that provide us this functionality is the [FormData API](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
 
-## FormData
+### FormData
 
 Basically, the **FormData API** is an interface that provides us an easy way to create sets of data and each in its own key, **just like a form element with fields and values**, including the INPUT[FILE] that we use to upload files!
 
@@ -40,7 +40,7 @@ formData.append("age", "20");
 
 FormData has many other methods you can use; you can check them in the [FormData documentation](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
 
-## Upload using AJAX
+### Upload using AJAX
 
 You can check this [demo of uploading file using AJAX]({{ site.url }}/demo/file-upload-using-ajax-jquery/){:target="_blank"}. Below you can see its source code which uses jQuery and the FormData API. This implementation is very simple and basic but complete, so you can easily adapt it to you page.
 
@@ -107,6 +107,6 @@ You can check this [demo of uploading file using AJAX]({{ site.url }}/demo/file-
 
 FormData is supported in the most recent browsers and you can check the compatibility table in [its documentation page](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
 
-## Extra
+### Extra
 
 If you are implementing upload of images, you might want to check out the previous article covering [Image preview before upload]({{ site.url }}/image-preview-before-upload/){:target="_blank"}.
