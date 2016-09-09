@@ -12,11 +12,11 @@ One of the most common ways to simulate upload using AJAX was to submit a form t
 
 ## HTML5, new APIs and new possibilities
 
-With the arrival of **HTML5 and its new APIs** available for JavaScript, uploading file using AJAX (e.g., images, documents, PDF) has become very simple. Now with a **few lines of JavaScript** it is possible to upload the file using AJAX and **without any third-party plugin**! The "new" API that provide us this functionality is the [FormData API](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
+With the arrival of **HTML5 and its new APIs** available for JavaScript, uploading file using AJAX (e.g., images, documents, PDF) has become very simple. Now with a **few lines of JavaScript** it is possible to upload the file using AJAX and **without any third-party plugin as intermediary**! The "new" API that provide us this functionality is the [FormData API](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
 
 ## FormData
 
-The **FormData API** is basically an interface that provides us an easy way to create sets of data and each in its own key, **just like a form element with fields and values**, including the INPUT[FILE] that we use to upload files!
+Basically, the **FormData API** is an interface that provides us an easy way to create sets of data and each in its own key, **just like a form element with fields and values**, including the INPUT[FILE] that we use to upload files!
 
 It's possible to create an empty FormData instance or pass to its constructor a form element which will have its fields and values **copied to the new object**:
 
@@ -28,7 +28,8 @@ var formData = new FormData();
 var formData = new FormData(document.getElementById("formElement"));
 ```
 
-It's also possible to **add new values to formData later**. To do that you can use the **append** method:
+<br>
+It's also possible to **add new values to formData later** and for such you can use the **append** method:
 
 ```javascript
 // Add more values to formData
@@ -36,6 +37,7 @@ formData.append("email", "test@email.com");
 formData.append("age", "20");
 ```
 
+<br>
 FormData has many other methods you can use; you can check them in the [FormData documentation](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
 
 ## Upload using AJAX
@@ -46,7 +48,7 @@ You can check this [demo of uploading file using AJAX]({{ site.url }}/demo/file-
 
 * It uses the **jQuery library** to make the AJAX request. You can use whatever library you prefer or even make [AJAX request using plain JavaScript](http://www.quirksmode.org/js/xmlhttp.html){:target="_blank" rel="nofollow"}.
 
-* In case your page that receives the AJAX request is a **PHP** page, the form fields are accessible through the [$_POST variable](http://php.net/manual/en/reserved.variables.post.php){:target="_blank" rel="nofollow"} and the file through the [$_FILES variable](http://php.net/manual/en/reserved.variables.files.php){:target="_blank" rel="nofollow"}.
+* In case the page that receives the AJAX request is a **PHP** page, the form fields are accessible through the [$_POST variable](http://php.net/manual/en/reserved.variables.post.php){:target="_blank" rel="nofollow"} and the file through the [$_FILES variable](http://php.net/manual/en/reserved.variables.files.php){:target="_blank" rel="nofollow"}.
 <br><br>
 
 ```html
@@ -82,14 +84,15 @@ You can check this [demo of uploading file using AJAX]({{ site.url }}/demo/file-
 					url : ajaxUrl,
 					type : "POST",
 					data : formData,
-					// both 'contentType' and 'processData' parameters are required so
-					// that all data are correctly transferred
+					// both 'contentType' and 'processData' parameters are
+					// required so that all data are correctly transferred
 					contentType : false,
 					processData : false
 				}).done(function(response){
-					// In this callback you get the AJAX response to check if everything is right...
+					// In this callback you get the AJAX response to check
+					// if everything is right...
 				}).fail(function(){
-					// Here you should treat the http errors (e.g., 403, 404, 500)
+					// Here you should treat the http errors (e.g., 403, 404)
 				}).always(function(){
 					alert("AJAX request finished!");
 				});
@@ -99,6 +102,7 @@ You can check this [demo of uploading file using AJAX]({{ site.url }}/demo/file-
 </html>
 ```
 
+<br>
 ## Compatibility
 
 FormData is supported in the most recent browsers and you can check the compatibility table in [its documentation page](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
