@@ -46,6 +46,6 @@ Here is a printscreen showing the **available options** in ScriptCase Tools **v0
 
 The **easiest way to install** ScriptCase Tools is getting the official release available at [**Chrome Web Store**](https://goo.gl/i4LtVl){:target="_blank"}.
 
-Instructions for manual installation or information about the latest releases are available at its [**official repository**](github.com/AndersonMamede/scriptcase-tools){:target="_blank"}. There you can also see all its **source code**, **contribute** in development, send **suggestions**, ask questions, report bugs and get more information.
+Instructions for manual installation or information about the latest releases are available at its [**official repository**](https://github.com/AndersonMamede/scriptcase-tools){:target="_blank"}. There you can also see all its **source code**, **contribute** in development, send **suggestions**, ask questions, report bugs and get more information.
 
 Contact can also be made through this page or via e-mail to [mamede.anderson@gmail.com](mailto:mamede.anderson@gmail.com){:target="_blank"}.
