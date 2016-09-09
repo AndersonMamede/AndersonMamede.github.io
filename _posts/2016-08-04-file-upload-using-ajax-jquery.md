@@ -103,7 +103,7 @@ You can check this [demo of uploading file using AJAX]({{ site.url }}/demo/file-
 ```
 <br>
 
-## Compatibility
+### Browser support
 
 FormData is supported in the most recent browsers and you can check the compatibility table in [its documentation page](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
 
