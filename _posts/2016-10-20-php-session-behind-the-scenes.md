@@ -4,6 +4,7 @@ title: "PHP session - Behind the scenes"
 date: 2016-10-20 23:01:07
 tags:
 - php
+- session
 ---
 
 Have you ever wondered what is hapenning internally when you use PHP session? Or how and where data are kept when navigating through different pages?
