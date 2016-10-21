@@ -14,7 +14,7 @@ In this article you will learn **how PHP manages sessions and what is happening 
 ### First, what is PHP session?
 [PHP session](http://php.net/sessions){:target="_blank" rel="nofollow"} is a way to **persist data** across subsequent accesses and/or multiple pages. **Differently from cookies**, session data are **stored in the server** and can't be directly manipulated by the user.
 
-Its basic usage is quite simple: you just have to start a session and then you can store data in it and retrieve them later. Here is an example:
+Its **basic usage is quite simple**: you just have to start a session and then you can store data in it and retrieve them later. Here is an example:
 
 ```php
 <?php
@@ -28,22 +28,21 @@ if(empty($_SESSION["first_access"])){
 
 // everytime the page is accessed it will show the date/time of the very first access
 echo "Your very first access was in " . $_SESSION["first_access"];
-``
-<br>
+```
+<br><br>
 
 ### Session management - behind the scenes
-
 Basicly, the default PHP session management process can be divided into three parts: **starting the session, storing data and closing the session**.
 
 Here is what happens in the very first time an user access our example above, which uses session:
 
-## 1) Starting the session
-- A session can be manually started by calling the session_start function (as shown in the example), or PHP will automatically start the session if the "session.auto_start" option (in php.ini) is set to "1". Either way, PHP creates a brand new session with an unique identifier (the "session id");
+#### 1) Starting the session
+A session can be manually started by calling the session_start function (as shown in the example), or PHP will automatically start the session if the "session.auto_start" option (in php.ini) is set to "1". Either way, PHP creates a brand new session with an unique identifier (the "session id");
 
-## 2) Storing information
+#### 2) Storing information
 - Our application stores data in the $_SESSION super global array - the date/time that the user first accessed the page;
 
-## 3) Closing the session
+#### 3) Closing the session
 - A session can be manually closed by calling the session_write_close function (or session_commit, which is just an alias to session_write_close), or PHP will automatically close the session after the script terminated. If $_SESSION is not empty, PHP serializes and stores all its data in a temporary file in the hard disk. Each single session file is linked to a single session and its name consists of the session id prefixed by "sess_", and the saving path is determined by the "session.save_path" option (in php.ini) or by calling the session_save_path function. The session id is then sent to the user via cookies, which is stored in the browser;
 
 For the subsequent accesses, there is a difference in how the session is started:
