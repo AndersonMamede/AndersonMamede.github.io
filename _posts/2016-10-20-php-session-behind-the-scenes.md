@@ -37,7 +37,7 @@ Basicly, the default PHP session management process can be divided into three pa
 Here is what happens in the **very first time** an user access our example above, which uses session:
 
 #### 1) Starting the session
-- A session can be manually started by calling the session_start function (as shown in the example), or PHP will automatically start the session if the "session.auto_start" option (in php.ini) is set to "1";<br>
+- A session can be manually started by calling the session_start function (as shown in the example), or PHP will automatically start the session if the "session.auto_start" option (in php.ini) is set to "1";<br><br>
 - Either way, PHP creates a **brand new session** with an **unique identifier** (the "session id");
 
 #### 2) Storing information
