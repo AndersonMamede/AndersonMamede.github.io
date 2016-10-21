@@ -44,18 +44,14 @@ Here is what happens in the **very first time** an user access our example above
 - Our application stores data in the $_SESSION super global array - the date/time that the user first accessed the page;
 
 #### 3) Closing the session
-- A session can be manually closed by calling the session_write_close function (or session_commit, which is just an alias to session_write_close), or PHP will automatically close the session after the script terminated;
-
-- If $_SESSION is not empty, PHP **serializes and stores all its data in a temporary file** in the hard disk. Each single session file is linked to a single session and its name consists of the session id prefixed by "sess_", and the saving path is determined by the "session.save_path" option (in php.ini) or by calling the session_save_path function;
-
+- A session can be manually closed by calling the session_write_close function (or session_commit, which is just an alias to session_write_close), or PHP will automatically close the session after the script terminated;<br><br>
+- If $_SESSION is not empty, PHP **serializes and stores all its data in a temporary file** in the hard disk. Each single session file is linked to a single session and its name consists of the session id prefixed by "sess_", and the saving path is determined by the "session.save_path" option (in php.ini) or by calling the session_save_path function;<br><br>
 - The **session id is then sent to the user** via cookies, which is stored in the browser;
 
 #### * For the subsequent accesses, there is a difference in how session is started:
 
-- When a session is started, PHP checks if a session id was manually configured by the application (by calling session_id), or passed via $_GET, $_POST or $_COOKIES (with this last being the simplest and easiest way, as it's sent automatically by the browser);
-
-- If a **session id is found**, then PHP **retrieves the matching session file** ("sess_" + session id), and **unserialize and parses its content into the $_SESSION variable**;
-
+- When a session is started, PHP checks if a session id was manually configured by the application (by calling session_id), or passed via $_GET, $_POST or $_COOKIES (with this last being the simplest and easiest way, as it's sent automatically by the browser);<br><br>
+- If a **session id is found**, then PHP **retrieves the matching session file** ("sess_" + session id), and **unserialize and parses its content into the $_SESSION variable**;<br><br>
 - Or if neither a session id and a matching session file are found, PHP creates a **brand new session** in the same way as in the very first access;
 <br><br>
 
