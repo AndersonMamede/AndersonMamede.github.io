@@ -1,13 +1,13 @@
 # Site settings
 title: "Anderson Mamede | Blog"
-description: Um blog sobre desenvolvimento web
+description: A web development blog
 baseurl: ""
 url: "http://blog.andersonmamede.com.br"
 
 # User settings
 username: Anderson Mamede
-user_title: Desenvolvedor Web/Mobile e (ex-)jogador de Tibia
-user_description: Desenvolvedor Web/Mobile e (ex-)jogador de Tibia
+user_title: Web/Mobile Full-Stack Developer and (ex-)Tibia player
+user_description: Web/Mobile Full-Stack Developer and (ex-)Tibia player
 email: mamede.anderson@gmail.com
 twitter_username: andersonrmamede
 github_username: AndersonMamede
