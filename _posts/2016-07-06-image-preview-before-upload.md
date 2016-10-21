@@ -25,7 +25,6 @@ The [FileReader API](https://developer.mozilla.org/pt-BR/docs/Web/API/FileReader
 <br><br>
 
 You can check this [demo of image preview before upload]({{ site.url }}/demo/image-preview-before-upload/){:target="_blank"}. And here is its code:
-<br>
 
 ```html
 <!DOCTYPE html>
