@@ -41,7 +41,6 @@ I created this extension using **HTML/CSS/JavaScript**, some [browser APIs](http
 
 Here is a printscreen showing the **available options** in ScriptCase Tools **v0.2**:
 ![ScriptCase Tools options]({{ site.url }}/images/scriptcase-tools-v0.2.png)
-<br><br>
 
 ## Installing, contributing and more
 The **easiest way to install** ScriptCase Tools is getting the official release available at [**Chrome Web Store**](https://goo.gl/i4LtVl){:target="_blank"}.
