@@ -49,14 +49,12 @@ Here is what happens in the **very first time** an user access our example above
 - The **session id is then sent to the user** via cookies, which is stored in the browser;
 
 ### For subsequent accesses, there is a difference in how session is started:
-
 - When a session is started, PHP checks if a session id was manually configured by the application (by calling session_id), or passed via $\_GET, $\_POST or $\_COOKIES (with this last being the simplest and easiest way, as it's sent automatically by the browser);<br><br>
 - If a **session id is found**, then PHP **retrieves the matching session file** ("sess\_" + session id), and **unserialize and parses its content into the $\_SESSION variable**;<br><br>
 - Or if neither a session id and a matching session file are found, PHP creates a **brand new session** in the same way as in the very first access;
 <br><br>
 
 ## Custom session management
-
 The **default** session management is by far the most commonly used one, which is **file system** as explained above: data are stored in and retrieved from a file in the disk. But in certain cases you may prefer to use custom session handlers (e.g., database), which can be done through the [session_set_save_handler](http://php.net/session_set_save_handler){:target="_blank"} function; but be aware that you would need to **create all the basic operations** used in session management: open/start, close, read, write, destroy, and also garbage collect.
 
 You can find more information and some examples in the [session_set_save_handler documentation](http://php.net/session_set_save_handler){:target="_blank"}.
