@@ -8,11 +8,12 @@ tags:
 
 Have you ever wondered what is hapenning internally when you use PHP session? Or how and where data are kept when navigating through different pages?
 
-In this article you will **learn how sessions are managed by PHP and what is happening behind the scenes**.
+In this article you will learn **how PHP manages sessions and what is happening behind the scenes**.
+<br>
 
-### First, what is a PHP session?
+### First, what is PHP session?
 
-[PHP session](http://php.net/sessions){:target="_blank"} is a way to **persist data** across subsequent accesses and/or multiple pages. **Differently from cookies**, session data are **stored in the server** and can't be directly manipulated by the user.
+[PHP session](http://php.net/sessions){:target="_blank" rel="nofollow"} is a way to **persist data** across subsequent accesses and/or multiple pages. **Differently from cookies**, session data are **stored in the server** and can't be directly manipulated by the user.
 
 Its basic usage is quite simple: you just have to start a session and then you can store data in it and retrieve them later. Here is an example:
 
