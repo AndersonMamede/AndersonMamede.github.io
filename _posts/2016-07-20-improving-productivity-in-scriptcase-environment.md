@@ -16,8 +16,9 @@ That is how its own [official page](http://www.scriptcase.net/){:target="_blank"
 In spite of having some (many) problems, **ScriptCase** sufficiently fulfills what it's up to: a tool to create **web applications** using PHP and JavaScript, integrating multiple different databases (e.g. MySQL, SQL Server, PostgreSQL) in a very fast way and providing utilities like forms, grids, searches, reports, charts, internacionalization, export data to PDF/XLS/CSV, and many other options. Although ScriptCase provides all these benefits, **some (not so) small details in its environment are very frustrating**.
 
 I used to work with [Sublime Text](https://www.sublimetext.com/){:target="_blank"} editor and there I could **customize it completely** and also use plugins for just about everything, from shortcut keys to autocompletes, snippets, FTP, versioning and revision control system, documentation, and the list goes on. But all these facilities **are gone** in ScriptCase.
+<br><br>
 
-### The problem
+## The problem
 
 ScriptCase has its own [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment){:target="_blank" rel="nofollow"} and the code editor is **[CodeMirror](https://codemirror.net/){:target="_blank" rel="nofollow"} with only search and replace functions**. That's not even the basics:
 
