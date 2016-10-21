@@ -20,6 +20,7 @@ Basically, the **FormData API** is an interface that provides us an easy way to 
 
 It's possible to create an empty FormData instance or pass to its constructor a form element which will have its fields and values **copied to the new object**:
 
+<br>
 ```javascript
 // This way formData is empty
 var formData = new FormData();
@@ -31,6 +32,7 @@ var formData = new FormData(document.getElementById("formElement"));
 
 It's also possible to **add new values to formData later** and for such you can use the **append** method:
 
+<br>
 ```javascript
 // Add more values to formData
 formData.append("email", "test@email.com");
@@ -48,8 +50,8 @@ You can check this [demo of uploading file using AJAX]({{ site.url }}/demo/file-
 
 * It uses the **jQuery library** to make the AJAX request. You can use whatever library you prefer or even make [AJAX request using plain JavaScript](http://www.quirksmode.org/js/xmlhttp.html){:target="_blank" rel="nofollow"}.<br><br>
 * In case the page that receives the AJAX request is a **PHP** page, the form fields are accessible through the [$_POST variable](http://php.net/manual/en/reserved.variables.post.php){:target="_blank" rel="nofollow"} and the file through the [$_FILES variable](http://php.net/manual/en/reserved.variables.files.php){:target="_blank" rel="nofollow"}.
-<br>
 
+<br>
 ```html
 <!DOCTYPE html>
 <html>
