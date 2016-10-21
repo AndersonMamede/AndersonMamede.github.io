@@ -17,6 +17,7 @@ In this article you will learn **how PHP manages sessions and what is happening 
 
 Its **basic usage is quite simple**: you just have to start a session and then you can store data in it and retrieve them later. Here is an example:
 
+<br>
 ```php
 <?php
 // start the session
