@@ -29,7 +29,7 @@ if(empty($_SESSION["first_access"])){
 // everytime the page is accessed it will show the date/time of the first access
 echo "Your very first access was in " . $_SESSION["first_access"];
 ```
-<br><br>
+<br>
 
 ## Session management - behind the scenes
 Basicly, the default PHP session management process can be divided into three parts: **starting the session, storing data and closing the session**.
