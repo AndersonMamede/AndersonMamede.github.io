@@ -30,13 +30,13 @@ compress_html:
 # Links to include in menu navigation
 # For external links add external: true
 links:
-  - title: Início
+  - title: Home
     url: /
 #  - title: Series
 #    url: /series
   - title: Tags
     url: /tags
-  - title: Sobre mim
+  - title: About me
     url: /about
 
 # exclude my node related stuff
