@@ -40,11 +40,11 @@ Here is what happens in the **very first time** an user access our example above
 #### 1) Starting the session
 - A session can be manually started by calling the session_start function (as shown in the example), or PHP will automatically start the session if the "session.auto_start" option (in php.ini) is set to "1";<br><br>
 - Either way, PHP creates a **brand new session** with an **unique identifier** (the "session id");
-<br>
+<br><br>
 
 #### 2) Storing information
 - Our application stores data in the $\_SESSION super global array - the date/time that the user first accessed the page;
-<br>
+<br><br>
 
 #### 3) Closing the session
 - A session can be manually closed by calling the session_write_close function (or session_commit, which is just an alias to session_write_close), or PHP will automatically close the session after the script terminated;<br><br>
