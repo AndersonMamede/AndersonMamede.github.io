@@ -7,12 +7,12 @@ tags:
 - session
 ---
 
-Have you ever wondered what is hapenning internally when you use PHP session? Or how and where data are kept when navigating through different pages?
+Have you ever wondered what is happening internally when you use PHP session? Or how and where data are kept when navigating through different pages?
 
 In this article you will learn **how PHP manages sessions and what is happening behind the scenes**.
 <br><br>
 
-## First, what is PHP session?
+## But first, what is PHP session?
 [PHP session](http://php.net/sessions){:target="_blank" rel="nofollow"} is a way to **persist data** across subsequent accesses and/or multiple pages. **Differently from cookies**, session data are **stored in the server** and can't be directly manipulated by the user.
 
 Its **basic usage is quite simple**: you just have to start a session and then you can store data in it and retrieve them later. Here is an example:
@@ -33,7 +33,7 @@ echo "Your very first access was in " . $_SESSION["first_access"];
 <br>
 
 ## Session management - behind the scenes
-Basicly, the default PHP session management process can be divided into three parts: **starting the session, storing data and closing the session**.
+Basically, the default PHP session management process can be divided into three parts: **starting the session, storing data and closing the session**.
 
 Here is what happens in the **very first time** an user access our example above, which uses session:
 <br><br>
@@ -54,12 +54,12 @@ Here is what happens in the **very first time** an user access our example above
 <br><br>
 
 ### For subsequent accesses, there is a difference in how session is started:
-- When a session is started, PHP checks if a session id was manually configured by the application (by calling session_id), or passed via $\_GET, $\_POST or $\_COOKIES (with this last being the simplest and easiest way, as it's sent automatically by the browser);<br><br>
-- If a **session id is found**, then PHP **retrieves the matching session file** ("sess\_" + session id), and **unserialize and parses its content into the $\_SESSION variable**;<br><br>
-- Or if neither a session id and a matching session file are found, PHP creates a **brand new session** in the same way as in the very first access;
+- When a session is started, PHP checks if a session id was manually configured by the application (by calling session_id), or passed via $\_GET, $\_POST or $\_COOKIES (with this last being the simplest and easiest way because it's sent automatically by the browser);<br><br>
+- If a **session id is found**, then PHP **retrieves the matching session file** ("sess\_" + session id), and **unserializes and parses its content into the $\_SESSION variable**;<br><br>
+- Or if neither a session id nor a matching session file are found, PHP creates a **brand new session** in the same way as in the very first access;
 <br><br>
 
 ## Custom session management
-The **default** session management is by far the most commonly used one, which is **file system** as explained above: data are stored in and retrieved from a file in the disk. But in certain cases you may prefer to use custom session handlers (e.g., database), which can be done through the [session_set_save_handler](http://php.net/session_set_save_handler){:target="_blank"} function; but be aware that you would need to **create all the basic operations** used in session management: open/start, close, read, write, destroy, and also garbage collect.
+The **default** session management is by far the most commonly used one, which is **file system** as explained above: data are stored in and retrieved from a file in the disk. But in certain cases you may prefer to use custom session handlers (e.g., database), which can be done through the [session_set_save_handler](http://php.net/session_set_save_handler){:target="_blank"} function; but be aware that you would have to **create all the basic operations** used in session management: open/start, close, read, write, destroy, and also garbage collect.
 
 You can find more information and some examples in the [session_set_save_handler documentation](http://php.net/session_set_save_handler){:target="_blank"}.
