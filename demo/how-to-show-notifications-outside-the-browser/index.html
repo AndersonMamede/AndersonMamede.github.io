@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>How to show notifications outside the browser / Demo</title>
+	</head>
+	<body>
+		<button id="test-button">Test</button>
+		<script>
+			/*
+			 * For demonstration porpuse, all JavaScript code was incorporated in
+			 * the HTML file. But when developing your application, your JavaScript code
+			 * should be in a separated file. Check this page for more information:
+			 * https://developer.yahoo.com/performance/rules.html#external
+			 */
+			
+			function notificationIsSupported(){
+				return typeof window.Notification != "undefined";
+			};
+			
+			function checkWebNotificationPermission(){
+				// status list for permission:
+				// "default" => permission hasn't been request yet
+				// "denied" => Web Notification API will not work
+				// "granted" => permission is already granted
+				if(notificationIsSupported() && Notification.permission == "default"){
+					Notification.requestPermission();
+				}
+			}
+			
+			var displayNotification = function(title, message){
+				// detect what type of notification should be used (WebNotification or a simple alert)
+				if(!notificationIsSupported() || Notification.permission != "granted"){
+					alert(title + "\n" + message);
+				}else{
+					new Notification(title, {
+						icon : "notification.png",
+						body : message
+					});
+				}
+			};
+			
+			// permission should be requested as soon as the page is
+			// loaded, so when a notification is ready to be sent,
+			// permission is already granted
+			checkWebNotificationPermission();
+			
+			document.querySelector("#test-button").addEventListener("click", function(){
+				displayNotification("NOTIFICATION", "You have a new message.");
+			});
+		</script>
+	</body>
+</html>
