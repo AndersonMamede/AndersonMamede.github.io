@@ -23,7 +23,7 @@ Before you send any notification, two things must be taken into account:
 * Web Notifications API is **compatible with all major browsers**, i.e. Chrome, Firefox, Safari, Opera and Microsoft Edge - but it's not compatible with the now outdated Internet Explorer. If support for Internet Explorer or any other old browser is required, you can use a simple alert to show the message when this API is not supported. For more information about browser compatibility see [http://caniuse.com/#feat=notifications](http://caniuse.com/#feat=notifications){:target="_blank" rel="nofollow"}.<br><br>
 * In order to send notification, you have to **ask user for permission** (if it hans't been granted yet). A method for requesting such permission is already included in this API.
 
-Here is an example which uses Web Notifications API to show a notification when the "Test" button is clicked:
+Here is an example which uses Web Notifications API to show a notification when the "Test Web Notification" button is clicked:
 <br>
 
 ```html
