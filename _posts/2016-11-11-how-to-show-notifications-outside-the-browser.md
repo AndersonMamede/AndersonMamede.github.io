@@ -10,7 +10,7 @@ HTML5 and its JavaScript APIs are not so new, and yet there are features not ver
 
 [Web Notifications](https://developer.mozilla.org/en-US/docs/Web/API/notification){:target="_blank" rel="nofollow"} is a JavaScript API which can **show messages (notifications)** to users. It is very useful for notifying users when something happens in a web system/page, e.g., a new message arrives, a new order is completed, a long process is ready, a user must take care as soon as possible of any new information submitted by other users.
 
-As long as the browser is open, the notification is usually displayed on the right side of screen, **outside the browser** and above everything else, which means that even if the webpage or the browser are not visible (e.g. they're running in background or user is using another sofware), users will get to see the message.
+As long as the browser is open, the notification is usually displayed on the right side of screen, **outside the browser and above everything else**, which means that even if the webpage or the browser are not visible (e.g. they're running in background or user is using another sofware), users will get to see the message.
 
 ![Web Notification demo]({{ site.url }}/images/web-notification-demo.png)
 
@@ -24,7 +24,7 @@ Before you send any notification, two things must be taken into account:
 
 * In order to send notification, you have to **ask user for permission** (if it hans't been granted yet). A method for requesting such permission is already included in this API.
 
-Now here is an example which uses Web Notifications API to show a notification when the "Test" button is clicked:
+Here is an example which uses Web Notifications API to show a notification when the "Test" button is clicked:
 <br>
 
 ```html
@@ -60,7 +60,8 @@ Now here is an example which uses Web Notifications API to show a notification w
 			}
 			
 			var displayNotification = function(title, message){
-				// detect what type of notification should be used (WebNotification or a simple alert)
+				// detect what type of notification should be
+				// used (WebNotification or a simple alert)
 				if(!notificationIsSupported() || Notification.permission != "granted"){
 					alert(title + "\n" + message);
 				}else{
