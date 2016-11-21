@@ -3,11 +3,11 @@
         var settings = $.extend({
             jsonFile        : '/search.json',
             jsonFormat      : 'title,category,desc,url,date,shortdate',
-            template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{date}</time></span></a></article></li>',
+            template : '<li><article><a href="{url}">{title}</a></article></li>',
             searchResults   : '.search-results',
-            searchResultsTitle   : '<h4>Resultado:</h4>',
+            searchResultsTitle   : '<h4>Result:</h4>',
             limit           : '5',
-            noResults       : '<p>Oh!<br/><small>Sem resultado! :(</small></p>'
+            noResults       : '<p>Oh!<br/><small>No results! :(</small></p>'
         }, options);
 
         var properties = settings.jsonFormat.split(',');
