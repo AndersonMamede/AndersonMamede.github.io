@@ -25,17 +25,16 @@ For usability, **breadcrumbs** will:
 
 ## Breadcrumbs, SERPs and SEO
 
-Breadcrumbs are also **good for [SERPs](https://en.wikipedia.org/wiki/SERP){:target="_blank" rel="nofollow"}** and can have beneficial impact on your SEO.
+Breadcrumbs are also **good for [SERPs](https://en.wikipedia.org/wiki/Search_engine_results_page){:target="_blank" rel="nofollow"}** and can have beneficial impact on your SEO.
 
 Using a proper [schema.org markup](http://schema.org/docs/schemas.html){:target="_blank" rel="nofollow"} you can setup breadcrumbs to appear on your page listing within the SERPs. Although they don't actually improve SEO ranking, they **improve the page's visibility within the results**, which attract people's attention.
-<br>
+<br><br>
 
 This is how a page without proper markup for breadcrumbs appears in Google's result page:
 ![Page without schema markup]({{ site.url }}/images/breadcrumbs-serp-result-simple.png)
 
 Now the same page with proper markup (microdata):
 ![Page using schema markup]({{ site.url }}/images/breadcrumbs-serp-result.png)
-<br>
 
 ## How to implement breadcrumbs with schema markup?
 
@@ -59,7 +58,7 @@ Taking the above PC World's breadcrumbs as example, this is the HTML and schema 
 		<meta itemprop="position" content="2"/>
 	</li>
 </ol>
-``
+```
 
 This is all you need to **setup breadcrumbs using schema markup**. You can change the href attributes and descriptions and also add more itens.
 
