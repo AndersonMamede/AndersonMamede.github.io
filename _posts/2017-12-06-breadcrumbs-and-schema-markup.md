@@ -8,7 +8,7 @@ tags:
 - schema.org
 ---
 
-### Breadcrumbs
+## Breadcrumbs
 
 In digital scenario, [breadcrumbs](https://developers.google.com/search/docs/data-types/breadcrumbs){:target="_blank" rel="nofollow"} are structural navigation systems used in user interfaces to provide users with a way to locate themselves within the structure of a website. **Breadcrumbs** show the traveled path by the user and/or the depth where he's in.
 
@@ -21,24 +21,28 @@ For usability, **breadcrumbs** will:
 * improve the findability of pages and sections
 * direct users around your site
 * show website hierarchy
+<br>
 
-### Breadcrumbs, SERPs and SEO
+## Breadcrumbs, SERPs and SEO
 
 Breadcrumbs are also **good for [SERPs](https://en.wikipedia.org/wiki/SERP){:target="_blank" rel="nofollow"}** and can have beneficial impact on your SEO.
 
 Using a proper [schema.org markup](http://schema.org/docs/schemas.html){:target="_blank" rel="nofollow"} you can setup breadcrumbs to appear on your page listing within the SERPs. Although they don't actually improve SEO ranking, they **improve the page's visibility within the results**, which attract people's attention.
+<br>
 
 This is how a page without proper markup for breadcrumbs appears in Google's result page:
 ![Page without schema markup]({{ site.url }}/images/breadcrumbs-serp-result-simple.png)
 
 Now the same page with proper markup (microdata):
 ![Page using schema markup]({{ site.url }}/images/breadcrumbs-serp-result.png)
+<br>
 
-### How to implement breadcrumbs with schema markup?
+## How to implement breadcrumbs with schema markup?
 
 It's actually quite easy to setup [breadcrumbs with schema markup](http://schema.org/BreadcrumbList){:target="_blank" rel="nofollow"} in your HTML pages.
 
 Taking the above PC World's breadcrumbs as example, this is the HTML and schema markup to have the breadcrumbs showing in SERPs:
+<br>
 
 ```html
 <ol itemscope itemtype="http://schema.org/BreadcrumbList">
