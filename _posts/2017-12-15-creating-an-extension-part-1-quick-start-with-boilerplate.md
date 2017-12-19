@@ -70,8 +70,8 @@ After you clone/download the boilerplate you already have a **working extension*
 
 Being a minimalistic boilerplate, it has nothing more than the necessary configuration, folders and files. **Installing an extension on Chrome or Firefox** is simple:
 
-* To install a WebExtension for Chrome go to chrome://extensions, click the "Load unpacked extension" button and select the *boilerplate* folder;
-* To install a WebExtension for Firefox go to about:debugging, click the "Load Temporary Add-on" button and select the *manifest.json* file inside the *boilerplate* folder;
+* To install a WebExtension for **Chrome** go to chrome://extensions, click the "Load unpacked extension" button and select the *boilerplate* folder;
+* To install a WebExtension for **Firefox** go to about:debugging, click the "Load Temporary Add-on" button and select the *manifest.json* file inside the *boilerplate* folder;
 
 After installation you'll see a blue square near the address bar - that's the boilerplate extension:
 ![A minimalistic WebExtension boilerplate]({{ site.url }}/images/minimalistic-webextension-boilerplate.png)
