@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creating an extension - Part 1: Quick start with Boilerplate"
-date: 2017-12-19 23:17:42
+date: 2017-12-15 23:17:42
 tags:
 - boilerplate
 - extension
@@ -9,7 +9,10 @@ tags:
 - personal project
 ---
 
-This is the first part of the two-post series where I'll show how to create a WebExtension for Chrome and Firefox which shows for how long a page has been opened. In this first part I'll show **how to quickly create a brand new extension**; in the second part I'll show **how to code a WebExtension to show the elapsed time**.
+This is the first part of the two-post series where I'll show how to create a WebExtension for Chrome and Firefox which shows for how long a page has been opened:
+
+* In this first part I'll show how to **quickly create a new extension**;
+* In the second part I'll show how to **code a WebExtension** to show the elapsed time;
 
 # Creating a new extension
 
