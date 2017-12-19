@@ -7,6 +7,7 @@ tags:
 - productivity
 - extension
 - github
+- personal project
 ---
 
 > The most efficient web development environment.<br>
