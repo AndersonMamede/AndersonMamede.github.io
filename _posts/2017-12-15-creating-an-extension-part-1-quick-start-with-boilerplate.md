@@ -52,7 +52,7 @@ The [minimalistic WebExtension boilerplate is an open source project available a
 <br>manifest.json is the main file for an extension and it is where you set all configurations read by the browser (e.g., name, permissions, resources, etc).
 
 <br>
-Without any further, to start our extension which shows for how long a page has been opened, we will use that boilerplate instead of creating everything from scratch.
+Without any further, to start our extension which shows for how long a page has been opened, **we will use that boilerplate instead of creating everything from scratch**.
 
 ## Usage / Download
 
@@ -71,7 +71,6 @@ After you clone/download the boilerplate you already have a **working extension*
 Being a minimalistic boilerplate, it has nothing more than the necessary configuration, folders and files. **Installing an extension on Chrome or Firefox** is simple:
 
 * To install a WebExtension for Chrome go to chrome://extensions, click the "Load unpacked extension" button and select the *boilerplate* folder;
-
 * To install a WebExtension for Firefox go to about:debugging, click the "Load Temporary Add-on" button and select the *manifest.json* file inside the *boilerplate* folder;
 
 After installation you'll see a blue square near the address bar - that's the boilerplate extension:
@@ -85,4 +84,5 @@ All you need to create a WebExtension is this boilerplate and **you're ready to 
 
 <br><br>
 <strong>We'll use that minimalistic boilerplate to code an extension</strong> in the second post of this series (available in the next days):
+<br>
 Creating an extension - Part 2: Coding an extension for Chrome and Firefox
