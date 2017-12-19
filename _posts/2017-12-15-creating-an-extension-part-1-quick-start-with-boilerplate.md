@@ -39,18 +39,20 @@ The [minimalistic WebExtension boilerplate is an open source project available a
     └── manifest.json
 ```
 
-#### [boilerplate/](https://github.com/AndersonMamede/minimalistic-webextension-boilerplate/tree/master/boilerplate){:target="_blank" rel="nofollow"}
-This is where the boilerplate files are stored.
-
-#### [img/](https://github.com/AndersonMamede/minimalistic-webextension-boilerplate/tree/master/boilerplate/img){:target="_blank" rel="nofollow"}
-Contains the extension's icons. You can put any other images here.
-
-#### [pages/](https://github.com/AndersonMamede/minimalistic-webextension-boilerplate/tree/master/boilerplate/pages){:target="_blank" rel="nofollow"}
-Contains all extension's inner pages and their JS/CSS files: popup page, configuration page, or any other HTML page.
-
-#### [manifest.json](https://github.com/AndersonMamede/minimalistic-webextension-boilerplate/tree/master/boilerplate/manifest.json){:target="_blank" rel="nofollow"}
-manifest.json is the main file for an extension and it is where you set all configurations read by the browser (e.g., name, permissions, resources, etc).
-
+<div>
+  <a href="https://github.com/AndersonMamede/minimalistic-webextension-boilerplate/tree/master/boilerplate" target="_blank" rel="nofollow">boilerplate/</a>
+  <br/>This is where the boilerplate files are stored.
+  
+  <a href="https://github.com/AndersonMamede/minimalistic-webextension-boilerplate/tree/master/boilerplate/img" target="_blank" rel="nofollow">img/</a>
+  <br/>Contains the extension's icons. You can put any other images here.
+  
+  <a href="https://github.com/AndersonMamede/minimalistic-webextension-boilerplate/tree/master/boilerplate/pages" target="_blank" rel="nofollow">pages/</a>
+  <br/>Contains all extension's inner pages and their JS/CSS files: popup page, configuration page, or any other HTML page.
+  
+  <a href="https://github.com/AndersonMamede/minimalistic-webextension-boilerplate/tree/master/boilerplate/manifest.json" target="_blank" rel="nofollow">manifest.json</a>
+  <br/>manifest.json is the main file for an extension and it is where you set all configurations read by the browser (e.g., name, permissions, resources, etc).
+</div>
+<br/>
 
 Without any further, to start our extension which shows for how long a page has been opened, we will use that boilerplate instead of creating everything from scratch.
 
