@@ -52,4 +52,5 @@ Instructions for manual installation or information about the latest releases ar
 Contact can also be made through this page or via e-mail to [mamede.anderson@gmail.com](mailto:mamede.anderson@gmail.com){:target="_blank"}.
 
 <br>
-**EDIT:** ScriptCase Tools is constantly updated and is now in **v1.5.0**. More info: [https://github.com/AndersonMamede/scriptcase-tools/#features](https://github.com/AndersonMamede/scriptcase-tools/#features){:target="_blank"}
+**EDIT:** ScriptCase Tools is constantly updated and is now in **v1.5.0**.
+More info: [https://github.com/AndersonMamede/scriptcase-tools/#features](https://github.com/AndersonMamede/scriptcase-tools/#features){:target="_blank"}
