@@ -10,9 +10,6 @@ tags:
 - personal project
 ---
 
-**EDIT:** ScriptCase Tools is constantly updated and is now in **v1.5.0**. More info: [https://github.com/AndersonMamede/scriptcase-tools/#features](https://github.com/AndersonMamede/scriptcase-tools/#features){:target="_blank"}
-
-
 > The most efficient web development environment.<br>
 > Create your web solutions in a fast and innovative way, reducing the development time in up to 80%.
 
@@ -53,3 +50,6 @@ The **easiest way to install** ScriptCase Tools is getting the official release 
 Instructions for manual installation or information about the latest releases are available at its [**official repository**](https://github.com/AndersonMamede/scriptcase-tools){:target="_blank"}. There you can also see all its **source code**, **contribute** in development, send **suggestions**, ask questions, report bugs and get more information.
 
 Contact can also be made through this page or via e-mail to [mamede.anderson@gmail.com](mailto:mamede.anderson@gmail.com){:target="_blank"}.
+
+<br>
+**EDIT:** ScriptCase Tools is constantly updated and is now in **v1.5.0**. More info: [https://github.com/AndersonMamede/scriptcase-tools/#features](https://github.com/AndersonMamede/scriptcase-tools/#features){:target="_blank"}
