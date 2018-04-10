@@ -10,6 +10,9 @@ tags:
 - personal project
 ---
 
+**EDIT:** ScriptCase Tools is constantly updated and is now in **v1.5.0**. More info: [https://github.com/AndersonMamede/scriptcase-tools/#features](https://github.com/AndersonMamede/scriptcase-tools/#features){:target="_blank"}
+
+
 > The most efficient web development environment.<br>
 > Create your web solutions in a fast and innovative way, reducing the development time in up to 80%.
 
@@ -24,11 +27,11 @@ I used to work with [Sublime Text](https://www.sublimetext.com/){:target="_blank
 ScriptCase has its own [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment){:target="_blank" rel="nofollow"} and the code editor is **[CodeMirror](https://codemirror.net/){:target="_blank" rel="nofollow"} with only search and replace functions**. That's not even the basics:
 
 * There's **no autocomplete**
-* There's **no shotcut keys** (!!)
+* **No shotcut keys**
 * For saving your code you must use **mouse** to click the Save button, which is placed in the top of the IDE
-* And quite often you **misclick** a button in the top toolbar just because it's placed right under the menu, which opens when you mouse over it
+* And quite often you **misclick** a button in the top toolbar just because it's placed right under the menu which opens when you mouse over it
 * The code editor is always reloaded after you save your code, thus **removing the focus from the editor and losing cursor and scroll position**; that forces you to always search where you were before
-* and many other details that make you waste a lot of time and decrease the productivity
+* and many other details that make you waste a lot of time and end up decreasing productivity
 <br><br>
 
 ## Solution
