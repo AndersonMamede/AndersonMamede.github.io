@@ -6,17 +6,19 @@ tags:
 - javascript
 ---
 
-Until some time ago there was no way to **upload files using AJAX/JavaScript** that would work in the **most recent browsers** without having to write different code for specific browsers.
+## A bit of history
+
+In the early years, there was no way to **upload files using AJAX/JavaScript** that would work in the **most recent browsers** without having to write different code for specific browsers.
 
 One of the most common ways to simulate upload using AJAX was to submit a form to another page which would make some validations and then save the file in the right folder or in database. Another option was to use something that worked as an intermediary between the browser and the server; some plugins (e.g. jQuery Uploadify) used to use Flash back then.
 <br><br>
 
 ## HTML5, new APIs and new possibilities
-With the arrival of **HTML5 and its new APIs** available for JavaScript, uploading file using AJAX (e.g., images, documents, PDF) has become very simple. Now with a **few lines of JavaScript** it is possible to upload the file using AJAX and **without any third-party plugin as intermediary**! The "new" API that provide us this functionality is the [FormData API](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
+With the arrival of **HTML5 and its new JavaScript APIs**, uploading file using AJAX (e.g., images, documents, PDF) became much simpler. With just a few lines of JavaScript, it makes it possible to upload files using AJAX without any third-party plugin as intermediary or workaround! The API that provides this functionality is the [FormData API](https://developer.mozilla.org/en-US/docs/Web/API/FormData){:target="_blank" rel="nofollow"}.
 <br><br>
 
 ## FormData
-Basically, the **FormData API** is an interface that provides us an easy way to create sets of data and each in its own key, **just like a form element with fields and values**, including the INPUT[FILE] that we use to upload files!
+Basically, the **FormData API** is an interface that provides us an easy way to create sets of data, each with its own key, **just like a form element with fields and values**, including INPUT[FILE] that allows file upload.
 
 It's possible to create an empty FormData instance or pass to its constructor a form element which will have its fields and values **copied to the new object**:
 
