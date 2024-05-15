@@ -9,7 +9,7 @@ tags:
 
 Showing preview of files before uploading them to a server, specially for images, is a really interesting functionality for users and is quite simple to implement.
 
-It's possible to show preview even on heavily AJAX-based web pages/applications, as the preview can be done with **JavaScript and it does not rely on server processing**. If this is your case (web pages/application AJAX-based) you can also [upload your files with AJAX]({{ site.url }}/upload-de-arquivos-com-ajax-jquery/){:target="_blank"}.
+It's possible to show preview even on heavily AJAX-based web pages/applications, as the preview can be done with **JavaScript and it does not rely on server processing**. If this is your case (web pages/application AJAX-based) you can also [upload your files with AJAX]({{ site.url }}/file-upload-using-ajax-jquery/){:target="_blank"}.
 <br><br>
 
 Here I'll show you how to implement image preview with JavaScript by following these steps:
