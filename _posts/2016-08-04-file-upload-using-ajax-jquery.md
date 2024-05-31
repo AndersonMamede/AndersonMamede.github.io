@@ -48,8 +48,8 @@ You can check this [demo of uploading file using AJAX]({{ site.url }}/demo/file-
 
 **Notes about this code**:
 
-* It uses the **jQuery library** to make the AJAX request. You can use whatever library you prefer or even make [AJAX request using plain JavaScript](http://www.quirksmode.org/js/xmlhttp.html){:target="_blank" rel="nofollow"}.<br><br>
-* In case the page that receives the AJAX request is a **PHP** page, the form fields are accessible through the [$_POST variable](http://php.net/manual/en/reserved.variables.post.php){:target="_blank" rel="nofollow"} and the file through the [$_FILES variable](http://php.net/manual/en/reserved.variables.files.php){:target="_blank" rel="nofollow"}.
+* It uses the **jQuery library** to make the AJAX request. You can use whatever library you prefer or even make [AJAX request using plain JavaScript](https://www.quirksmode.org/js/xmlhttp.html){:target="_blank" rel="nofollow"}.<br><br>
+* In case the page that receives the AJAX request is a **PHP** page, the form fields are accessible through the [$_POST variable](https://php.net/manual/en/reserved.variables.post.php){:target="_blank" rel="nofollow"} and the file through the [$_FILES variable](https://php.net/manual/en/reserved.variables.files.php){:target="_blank" rel="nofollow"}.
 
 ```html
 <!DOCTYPE html>
